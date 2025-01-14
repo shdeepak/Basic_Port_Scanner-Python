@@ -12,6 +12,7 @@ A simple and efficient Python-based tool for scanning a range of ports on a spec
 ## Use Cases
 
 - **Network Security**: Identify open ports that could be potential security vulnerabilities.
+- **Network Troubleshooting**: Check if specific services (like HTTP, FTP, SSH) are running on a target machine.
 - **Service Monitoring**: Verify the status of network services by scanning specific ports on remote servers.
 
 ## Requirements
@@ -41,8 +42,9 @@ After running the script, it will prompt you for the following inputs:
 
 ### Example:
 
-```bash
+    ```bash
     $ python port_scanner.py
     Enter the target IP address or domain: 192.168.1.1
     Enter the start port: 20
     Enter the end port: 1024
+    ```
