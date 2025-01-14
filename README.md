@@ -23,7 +23,7 @@ A simple and efficient Python-based tool for scanning a range of ports on a spec
 1. Clone the repository:
     ```bash
     git clone https://github.com/shdeepak/Basic_Port_Scanner-Python.git
-    cd port_scanner
+    cd Basic_Port_Scanner-Python
     ```
     
 2. Run the port scanner:
