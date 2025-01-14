@@ -1,6 +1,6 @@
 # Basic_Port_Scanner-Python
 
-A simple and efficient Python-based tool for scanning a range of ports on a specified host. This script uses multithreading to quickly determine whether specific ports on a target system are open or closed. It is designed to be a lightweight solution for network administrators, security enthusiasts, and anyone who needs to check the availability of services running on specific ports.
+A simple and efficient Python-based tool for scanning a range of ports on a specified host. This script uses multithreading to quickly determine whether specific ports on a target system are open or closed. It is designed to be a lightweight solution for network administrators, security enthusiasts, and anyone who needs to check the availability of open ports of an IP address.
 
 ## Features
 
@@ -12,7 +12,6 @@ A simple and efficient Python-based tool for scanning a range of ports on a spec
 ## Use Cases
 
 - **Network Security**: Identify open ports that could be potential security vulnerabilities.
-- **Network Troubleshooting**: Check if specific services (like HTTP, FTP, SSH) are running on a target machine.
 - **Service Monitoring**: Verify the status of network services by scanning specific ports on remote servers.
 
 ## Requirements
@@ -23,7 +22,7 @@ A simple and efficient Python-based tool for scanning a range of ports on a spec
 
 1. Clone the repository:
     ```bash
-      git clone https://github.com/shdeepak/basic_port_scanner.git
+    git clone https://github.com/shdeepak/Basic_Port_Scanner-Python.git
     cd port_scanner
     ```
     
@@ -43,7 +42,7 @@ After running the script, it will prompt you for the following inputs:
 ### Example:
 
 ```bash
-$ python port_scanner.py
-Enter the target IP address or domain: 192.168.1.1
-Enter the start port: 20
-Enter the end port: 1024
+    $ python port_scanner.py
+    Enter the target IP address or domain: 192.168.1.1
+    Enter the start port: 20
+    Enter the end port: 1024
