@@ -5,7 +5,7 @@ from datetime import datetime
 def scan_port(host, port):
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-            sock.settimeout(1)  # Timeout for connection
+            sock.settimeout(1) 
             result = sock.connect_ex((host, port))
 
             if result == 0:
@@ -37,7 +37,7 @@ def scan_port(host, port):
         return f"Error on port {port}: {e}"
 
 def scan_ports(host, start_port, end_port):
-    # Validate port range
+    
     if start_port < 1 or end_port > 65535 or start_port > end_port:
         print("Invalid port range. Port numbers should be between 1 and 65535, and the start port should be less than or equal to the end port.")
         return
@@ -46,10 +46,10 @@ def scan_ports(host, start_port, end_port):
     start_time = datetime.now()
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
+        
         futures = [executor.submit(scan_port, host, port) for port in range(start_port, end_port + 1)]
-        results = [future.result() for future in concurrent.futures.as_completed(futures)]
- 
-    # Print the results of the scan
+        results = [future.result() for future in futures] 
+
     for result in results:
         print(result)
 
@@ -63,7 +63,6 @@ if __name__ == "__main__":
         start_port = int(input("Enter the start port: "))
         end_port = int(input("Enter the end port: "))
         
-        # Validate if the host is valid
         socket.gethostbyname(host)  
 
         scan_ports(host, start_port, end_port)
