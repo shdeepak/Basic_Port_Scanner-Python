@@ -41,10 +41,10 @@ After running the script, it will prompt you for the following inputs:
 3. **End Port**: The last port in the range to stop scanning.
 
 ### Example:
-
-    ```bash
+    
+```bash
     $ python port_scanner.py
     Enter the target IP address or domain: 192.168.1.1
     Enter the start port: 20
     Enter the end port: 1024
-    ```
+    
